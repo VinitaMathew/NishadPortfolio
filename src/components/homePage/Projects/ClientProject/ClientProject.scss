@@ -1,0 +1,28 @@
+.client-project-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  .project1,
+  .project2,
+  .project3 {
+    max-width: 1223px;
+    width: 100%;
+    height: auto;
+    min-width: 1223px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1420px) {
+  .client-project-container {
+    .project1,
+    .project2,
+    .project3 {
+      min-width: unset;
+    }
+  }
+}

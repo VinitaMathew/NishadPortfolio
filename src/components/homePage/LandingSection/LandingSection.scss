@@ -1,0 +1,46 @@
+.landing-section {
+  background: url("../../../assets/home-background.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  object-fit: cover;
+  .content-wrapper {
+    max-width: 1285px;
+    margin: auto;
+    .details-container {
+      text-align: center;
+      margin-top: 189px;
+      margin-bottom: 70px;
+      .line1 {
+        max-width: 770px;
+        margin: auto;
+        font-weight: 400;
+        font-size: 48px;
+        font-family: "Neadless Demo";
+        margin-bottom: 40px;
+      }
+      .line2 {
+        max-width: 1200px;
+        margin: auto;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 97px;
+      }
+      .work-button {
+        font-weight: 700;
+        font-size: 18px;
+        padding: 20px 60px;
+        border: 2px solid #000000;
+        border-radius: 8px;
+        background-color: unset;
+        height: fit-content;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .landing-section {
+  }
+}

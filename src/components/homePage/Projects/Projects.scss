@@ -1,0 +1,38 @@
+.projects-container {
+  padding: 0px 15px;
+  margin-top: 30px;
+  min-width: 1223px;
+  margin: auto;
+  .projects-heading {
+    display: flex;
+    list-style: none;
+    padding: unset;
+    border-bottom: 1px solid #C4C4C4;
+    .tab-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 32px;
+      height: 92px;
+      font-weight: 400;
+      font-size: 24px;
+      color: #7d7d7d;
+      cursor: pointer;
+    }
+    .active {
+      font-weight: 700;
+      color: #333333;
+      border-bottom: 6px solid #FFCC00;
+    }
+  }
+  .projects-list-wrapper {
+    margin-top: 50px;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1420px) {
+  .projects-container {
+    min-width: unset;
+  }
+}
