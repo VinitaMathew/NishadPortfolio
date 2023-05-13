@@ -1,7 +1,10 @@
 import React, { useRef } from "react";
 import { HashRouter, Routes, Route, NavLink } from "react-router-dom";
+import Menu from "./Menu/Menu";
 import HomePage from "../homePage/HomePage";
-import Projects from "../homePage/Projects/Projects";
+import PranatiProject from "../homePage/Projects/ClientProject/PranatiProject/PranatiProject";
+import TagProject from "../homePage/Projects/ClientProject/TagProject/TagProject";
+import BrightSmilesProject from "../homePage/Projects/ClientProject/BrightSmilesProject/BrightSmilesProject";
 import "./Routing.scss";
 
 export default function Routing() {
@@ -15,27 +18,19 @@ export default function Routing() {
     <div className="routingContainer">
       <HashRouter>
         <div>
-          <nav>
-            <ul>
-              <li>
-                <NavLink end to="/" className="link">
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/about" className="link">
-                  About
-                </NavLink>
-              </li>
-            </ul>
-          </nav>
+          <Menu isFooter={false} scrollToProjects={scrollToProjects} />
           <Routes>
             <Route
               path="/"
-              element={<HomePage workClick={scrollToProjects} projectRef={ref} />}
+              element={
+                <HomePage workClick={scrollToProjects} projectRef={ref} />
+              }
             />
-            {/* <Route path="/about" element={<Projects ref={ref} />} /> */}
+            <Route path="/Pranati" element={<PranatiProject />} />
+            <Route path="/Tag" element={<TagProject />} />
+            <Route path="/BrightSmiles" element={<BrightSmilesProject />} />
           </Routes>
+          <Menu isFooter={true} scrollToProjects={scrollToProjects} />
         </div>
       </HashRouter>
     </div>

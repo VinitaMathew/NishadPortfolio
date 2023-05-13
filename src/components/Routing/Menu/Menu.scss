@@ -1,0 +1,34 @@
+.menu-container {
+  display: flex;
+  max-width: 1223px;
+  margin: auto;
+  padding-top: 87px;
+  justify-content: space-between;
+  .logo {
+    width: 49px;
+    height: auto;
+  }
+  .nav-links {
+    display: flex;
+    gap: 52px;
+    margin: unset;
+    .nav-link {
+      font-weight: 400;
+      font-size: 18px;
+      list-style: none;
+      cursor: pointer;
+    }
+    .link {
+      color: #000000;
+      text-decoration: none;
+    }
+  }
+  .external-links {
+    display: flex;
+    gap: 30px;
+    .link-img {
+      height: 24px;
+      width: auto;
+    }
+  }
+}
