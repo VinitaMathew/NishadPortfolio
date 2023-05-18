@@ -5,8 +5,12 @@
   gap: 45px;
   .image-wrapper {
     overflow: hidden;
+    min-width: 1223px;
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    a {
+      display: flex;
     }
     .project1,
     .project2,
@@ -14,11 +18,10 @@
       max-width: 1223px;
       width: 100%;
       height: auto;
-      min-width: 1223px;
       transition: transform 0.45s ease-out;
       cursor: pointer;
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.03);
         transition: transform 0.45s ease-out;
       }
     }
@@ -28,11 +31,7 @@
 @media only screen and (max-width: 1420px) {
   .client-project-container {
     .image-wrapper {
-      .project1,
-      .project2,
-      .project3 {
-        min-width: unset;
-      }
+      min-width: unset;
     }
   }
 }
