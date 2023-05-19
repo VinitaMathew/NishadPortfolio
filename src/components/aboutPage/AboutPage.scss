@@ -1,5 +1,134 @@
-.about-page{
-        max-width: 1223px;
-    margin: auto;
-    margin-top: 150px;
+.about-page {
+  max-width: 1223px;
+  margin: auto;
+  margin-top: 246px;
+  margin-bottom: 112px;
+  position: relative;
+  .heading {
+    font-weight: 700;
+    font-size: 48px;
+    color: #333333;
+    position: relative;
+    &::after {
+      background: #ffcc00;
+      content: "";
+      height: 11px;
+      left: 0;
+      margin-top: 70px;
+      position: absolute;
+      width: 104px;
+    }
+  }
+  .image {
+    width: 100%;
+    height: auto;
+    min-width: 1223px;
+    margin: 32px 0px;
+  }
+  .accordion {
+    border-radius: 2px;
+    color: #333333;
+  }
+  .accordion-item {
+    border-bottom: 2px solid #eeeeee;
+  }
+  .accordion-button {
+    color: #231f20;
+    cursor: pointer;
+    padding: 40px 18px 40px 12px;
+    text-align: left;
+    border: none;
+    display: flex;
+    font-weight: 700;
+    font-size: 24px;
+    &::after {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      height: 25px;
+      width: 25px;
+      right: 20px;
+      border-bottom: 2px solid #333333;
+      border-right: 2px solid #333333;
+      transform: rotate(45deg);
+    }
+  }
+  .accordion-button[aria-expanded="true"]::after,
+  .accordion-button[aria-selected="true"]::after {
+    transform: rotate(-135deg);
+  }
+  .accordion-panel {
+    animation: fadein 0.35s ease-in;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    .list {
+      list-style: none;
+      margin: unset;
+      padding: unset;
+      margin-left: 12px;
+      .list-item {
+        display: flex;
+        margin-bottom: 38px;
+        .range {
+          min-width: 200px;
+          margin-right: 40px;
+        }
+        .edu-range {
+          min-width: 200px;
+          margin-right: 191px;
+        }
+        .right-section {
+          .title {
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 26px;
+          }
+          .school {
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 16px;
+          }
+          .desc {
+            letter-spacing: -0.2px;
+          }
+        }
+      }
+    }
+    .info-container {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 0px 24px 40px;
+      min-width: 42%;
+      .email,
+      .behance {
+        margin-bottom: 13px;
+      }
+      img {
+        width: 24px;
+        height: 24px;
+        margin-right: 22px;
+        margin-bottom: -5px;
+      }
+      a{
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      span,
+      a {
+        font-weight: 400;
+        font-size: 18px;
+        color: #333333;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1420px) {
+  .about-page {
+    .image {
+      min-width: unset;
+    }
+  }
 }
