@@ -1,9 +1,17 @@
-.menu-container {
+.menu-top-container {
   display: flex;
-  max-width: 1223px;
-  margin: auto;
+  max-width: 1260px;
   padding-top: 87px;
   justify-content: space-between;
+  text-align: right;
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 65px;
+  background: white;
+  left: 50%;
+  transform: translateX(-50%);
   .logo {
     width: 49px;
     height: auto;

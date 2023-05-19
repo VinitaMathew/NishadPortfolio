@@ -1,44 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./Menu.scss";
+import "./MenuBottom.scss";
 
 const Logo = require("../../../assets/logo.png");
 const BehanceLogo = require("../../../assets/behance-logo.png");
 const LinkedInLogo = require("../../../assets/linkedin-logo.png");
 const GmailLogo = require("../../../assets/gmail-logo.png");
 
-export default function Menu(props: any) {
+export default function MenuBottom(props: any) {
   const handleResumeClick = () => {
     window.open("/Nishad_Resume.pdf", "_blank");
   };
+  const [currentPath, setCurrentPath] = useState<any>(
+    window.location.href.split("/").pop()
+  );
+
+  const handleMenuClick = () => {
+    setCurrentPath(window.location.href.split("/").pop());
+  };
+
   return (
     <div
-      className="menu-container"
-      style={{
-        marginBottom: props.isFooter ? "136px" : "unset",
-        borderTop: props.isFooter ? "3px solid #F4F4F4" : "unset",
-      }}
+      className="menu-bottom-container"
     >
-      <NavLink end to="/" className="link">
+      <NavLink end to="/" className="link" onClick={handleMenuClick}>
         <img src={Logo} alt="" className="logo" />
       </NavLink>
       <ul className="nav-links">
-        <li className="nav-link">
+        <li className="nav-link" onClick={handleMenuClick}>
           <NavLink end to="/" className="link">
             Home
           </NavLink>
         </li>
-        <li className="nav-link" onClick={props.scrollToProjects}>
-          Work
-        </li>
-        <li className="nav-link">
+        {currentPath === "about" ? (
+          <li className="nav-link" onClick={props.scrollToProjects}>
+            <NavLink end to="/" className="link">
+              Work
+            </NavLink>
+          </li>
+        ) : (
+          <li className="nav-link" onClick={props.scrollToProjects}>
+            Work
+          </li>
+        )}
+        <li className="nav-link" onClick={handleMenuClick}>
           <NavLink to="/about" className="link">
             About
           </NavLink>
         </li>
-        <li className="nav-link" onClick={props.scrollToContact}>
-          Contact
-        </li>
+        {currentPath === "about" ? (
+          <li className="nav-link" onClick={props.scrollToContact}>
+            <NavLink end to="/" className="link">
+              Contact
+            </NavLink>
+          </li>
+        ) : (
+          <li className="nav-link" onClick={props.scrollToContact}>
+            Contact
+          </li>
+        )}
         <li className="nav-link" onClick={handleResumeClick}>
           Resume
         </li>
