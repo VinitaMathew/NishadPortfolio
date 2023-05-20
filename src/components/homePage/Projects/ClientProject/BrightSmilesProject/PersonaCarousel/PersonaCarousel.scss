@@ -1,0 +1,14 @@
+.carousel-container {
+  margin: 0 auto;
+  .react-multiple-carousel__arrow {
+    background: #82725e;
+    z-index: 10;
+    &:hover {
+      background: grey;
+    }
+  }
+}
+
+.slide-item {
+  margin-right: 20px; /* Adjust this value to set the gap between slides */
+}
