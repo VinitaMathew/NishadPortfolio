@@ -1,14 +1,14 @@
-.menu-top-container {
+.menu-top-container-desktop,
+.menu-top-container-mobile {
   display: flex;
   max-width: 1260px;
-  padding-top: 87px;
-  justify-content: space-between;
+  padding-top: 78px;
   text-align: right;
   z-index: 1000;
   width: 100%;
   position: fixed;
   top: 0;
-  height: 65px;
+  min-height: 65px;
   background: white;
   left: 50%;
   transform: translateX(-50%);
@@ -16,27 +16,69 @@
     width: 49px;
     height: auto;
   }
-  .nav-links {
-    display: flex;
-    gap: 52px;
-    margin: unset;
-    .nav-link {
-      font-weight: 400;
-      font-size: 18px;
-      list-style: none;
-      cursor: pointer;
-    }
-    .link {
-      color: #000000;
-      text-decoration: none;
+  .mobile-wrapper-menu {
+    position: fixed;
+    right: 0;
+    margin-right: 24px;
+    margin-top: -20px;
+    .menu-button {
+      background: none;
+      border: none;
+      height: 24px;
     }
   }
-  .external-links {
+  .menu-list {
     display: flex;
-    gap: 30px;
-    .link-img {
-      height: 24px;
-      width: auto;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-left: 22%;
+    padding-bottom: 40px;
+    .nav-links {
+      display: flex;
+      gap: 52px;
+      margin: unset;
+      .nav-link {
+        font-weight: 400;
+        font-size: 18px;
+        list-style: none;
+        cursor: pointer;
+      }
+      .link {
+        color: #000000;
+        text-decoration: none;
+      }
+    }
+    .external-links {
+      display: flex;
+      gap: 30px;
+      .link-img {
+        height: 24px;
+        width: auto;
+      }
+    }
+  }
+}
+
+.menu-top-container-mobile {
+  .logo {
+    max-height: 20px;
+    margin-left: 24px;
+  }
+  .menu-list {
+    flex-direction: column;
+    margin-top: 45px;
+    margin-left: -45px;
+    .nav-links {
+      flex-direction: column;
+      padding: unset;
+      gap: unset;
+      margin: 0px 24px 40px 0px;
+      .nav-link {
+        border-bottom: 1px solid #c4c4c4;
+        width: 100%;
+        display: flex;
+        padding: 24px 0px;
+      }
     }
   }
 }

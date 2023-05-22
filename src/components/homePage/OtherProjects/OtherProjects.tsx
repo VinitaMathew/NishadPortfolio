@@ -34,7 +34,7 @@ export default function OtherProjects() {
         </a>
       </div>
       <NavLink to="/about" className="about-nav">
-        <button className="about-btn">Know more about me ;)</button>
+        <button onClick={()=>window.scrollTo(0, 0)} className="about-btn">Know more about me ;)</button>
       </NavLink>
     </div>
   );
