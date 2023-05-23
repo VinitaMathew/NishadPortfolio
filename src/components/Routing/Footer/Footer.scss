@@ -1,0 +1,14 @@
+.footer-container {
+  display: flex;
+  max-width: 1260px;
+  padding-top: 87px;
+  margin: auto;
+  margin-bottom: 136px;
+  border-top: 3px solid #f4f4f4;
+  .logo {
+    width: 49px;
+    height: auto;
+    max-height: 20px;
+    margin-left: 24px;
+  }
+}

@@ -1,5 +1,5 @@
-.menu-top-container-desktop,
-.menu-top-container-mobile {
+.menu-container-desktop,
+.menu-container-mobile {
   display: flex;
   max-width: 1260px;
   padding-top: 78px;
@@ -59,7 +59,7 @@
   }
 }
 
-.menu-top-container-mobile {
+.menu-container-mobile {
   .logo {
     max-height: 20px;
     margin-left: 24px;

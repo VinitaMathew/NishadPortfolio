@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import "./MenuTop.scss";
+import React, { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import "./Menu.scss";
 
 const Logo = require("../../../assets/logo.png");
 const BehanceLogo = require("../../../assets/behance-logo.png");
@@ -9,32 +9,36 @@ const GmailLogo = require("../../../assets/gmail-logo.png");
 const MenuIcon = require("../../../assets/hamburger-icon.png");
 const CloseIcon = require("../../../assets/close-icon.png");
 
-export default function MenuTop(props: any) {
+export default function Menu(props: any) {
   const [isMobile] = useState(
     window.matchMedia("only screen and (max-width:1024px)").matches
   );
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-  const handleMenuIconClick = (isOpen:boolean) => {
+  const location = useLocation();
+  const [currentPath, setCurrentPath] = useState<any>(
+    window.location.href.split("/").pop()
+  );
+
+  const handleMenuIconClick = (isOpen: boolean) => {
     setIsMenuOpen(isOpen);
   };
   const handleResumeClick = () => {
     window.open("/Nishad_Resume.pdf", "_blank");
   };
-  const [currentPath, setCurrentPath] = useState<any>(
-    window.location.href.split("/").pop()
-  );
 
   const handleMenuClick = () => {
     setCurrentPath(window.location.href.split("/").pop());
     setIsMenuOpen(false);
   };
 
+  useEffect(() => {
+    setCurrentPath(window.location.href.split("/").pop());
+  }, [location]);
+
   return (
     <div
-      className={
-        isMobile ? "menu-top-container-mobile" : "menu-top-container-desktop"
-      }
+      className={isMobile ? "menu-container-mobile" : "menu-container-desktop"}
       style={{ boxShadow: isMenuOpen ? "0 6px 12px rgba(0,0,0,.2)" : "unset" }}
     >
       <NavLink end to="/" className="link" onClick={handleMenuClick}>
@@ -58,7 +62,7 @@ export default function MenuTop(props: any) {
                 Home
               </NavLink>
             </li>
-            {currentPath === "about" ? (
+            {currentPath !== "" ? (
               <li
                 className="nav-link"
                 onClick={() => {
@@ -86,7 +90,7 @@ export default function MenuTop(props: any) {
                 About
               </NavLink>
             </li>
-            {currentPath === "about" ? (
+            {currentPath !== "" ? (
               <li
                 className="nav-link"
                 onClick={() => {

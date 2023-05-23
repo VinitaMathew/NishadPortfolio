@@ -4,6 +4,7 @@
   margin-top: 246px;
   margin-bottom: 112px;
   position: relative;
+  padding: 0px 15px;
   .heading {
     font-weight: 700;
     font-size: 48px;
@@ -127,8 +128,18 @@
 
 @media only screen and (max-width: 1420px) {
   .about-page {
+    margin-top: 152px;
     .image {
       min-width: unset;
+    }
+    .accordion{
+      .accordion-panel{
+        .list{
+          .list-item{
+            flex-direction: column;
+          }
+        }
+      }
     }
   }
 }

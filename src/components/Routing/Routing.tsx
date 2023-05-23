@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
-import { HashRouter, Routes, Route, NavLink } from "react-router-dom";
-import MenuTop from "./MenuTop/MenuTop";
-import MenuBottom from "./MenuBottom/MenuBottom";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Menu from "./Menu/Menu";
+import Footer from "./Footer/Footer";
 import HomePage from "../homePage/HomePage";
 import PranatiProject from "../homePage/Projects/ClientProject/PranatiProject/PranatiProject";
 import TagProject from "../homePage/Projects/ClientProject/TagProject/TagProject";
@@ -28,11 +28,12 @@ export default function Routing() {
       }
     }, 100);
   };
+
   return (
     <div className="routingContainer">
       <HashRouter>
         <div>
-          <MenuTop
+          <Menu
             scrollToProjects={scrollToProjects}
             scrollToContact={scrollToContact}
           />
@@ -53,10 +54,7 @@ export default function Routing() {
             <Route path="/BrightSmiles" element={<BrightSmilesProject />} />
             <Route path="/about" element={<AboutPage />} />
           </Routes>
-          <MenuBottom
-            scrollToProjects={scrollToProjects}
-            scrollToContact={scrollToContact}
-          />
+          <Footer/>
         </div>
       </HashRouter>
     </div>
