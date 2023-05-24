@@ -15,12 +15,28 @@ export default function ClientProject() {
             src={ClientProject1}
             className="project1"
             alt="Pranati Project"
+            onClick={() =>
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              })
+            }
           />
         </NavLink>
       </div>
       <div className="image-wrapper">
         <NavLink to="/Tag">
-          <img src={ClientProject2} className="project2" alt="Tag Project" />
+          <img
+            src={ClientProject2}
+            className="project2"
+            alt="Tag Project"
+            onClick={() =>
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              })
+            }
+          />
         </NavLink>
       </div>
       <div className="image-wrapper">
@@ -29,6 +45,12 @@ export default function ClientProject() {
             src={ClientProject3}
             className="project3"
             alt="Bright Smiles Project"
+            onClick={() =>
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              })
+            }
           />
         </NavLink>
       </div>

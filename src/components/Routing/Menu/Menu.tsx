@@ -41,14 +41,25 @@ export default function Menu(props: any) {
       className={isMobile ? "menu-container-mobile" : "menu-container-desktop"}
       style={{ boxShadow: isMenuOpen ? "0 6px 12px rgba(0,0,0,.2)" : "unset" }}
     >
-      <NavLink end to="/" className="link" onClick={handleMenuClick}>
+      <NavLink
+        end
+        to="/"
+        className="link"
+        onClick={() => {
+          handleMenuClick();
+          window.scrollTo(0, 0);
+        }}
+      >
         <img src={Logo} alt="" className="logo" />
       </NavLink>
       {isMobile ? (
         <div className="mobile-wrapper-menu">
           <button
             className="menu-button"
-            onClick={() => handleMenuIconClick(!isMenuOpen)}
+            onClick={() => {
+              handleMenuIconClick(!isMenuOpen);
+              window.scrollTo(0, 0);
+            }}
           >
             <img src={isMenuOpen ? CloseIcon : MenuIcon}></img>
           </button>
@@ -57,7 +68,13 @@ export default function Menu(props: any) {
       {(isMobile && isMenuOpen) || !isMobile ? (
         <div className="menu-list">
           <ul className="nav-links">
-            <li className="nav-link" onClick={handleMenuClick}>
+            <li
+              className="nav-link"
+              onClick={() => {
+                handleMenuClick();
+                window.scrollTo(0, 0);
+              }}
+            >
               <NavLink end to="/" className="link">
                 Home
               </NavLink>
@@ -85,7 +102,13 @@ export default function Menu(props: any) {
                 Work
               </li>
             )}
-            <li className="nav-link" onClick={handleMenuClick}>
+            <li
+              className="nav-link"
+              onClick={() => {
+                handleMenuClick();
+                window.scrollTo(0, 0);
+              }}
+            >
               <NavLink to="/about" className="link">
                 About
               </NavLink>

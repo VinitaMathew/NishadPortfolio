@@ -7,11 +7,19 @@ const BSImage1 = require("../../../../../assets/bs-image1.png");
 const BSImage2 = require("../../../../../assets/bs-image2.png");
 const BSImage3 = require("../../../../../assets/bs-image3.png");
 const BSImage4 = require("../../../../../assets/bs-image4.png");
+const BSImage5 = require("../../../../../assets/bs-image5.png");
+const BSImage6 = require("../../../../../assets/bs-image6.png");
+const BSImage7 = require("../../../../../assets/bs-image7.png");
+const BSImage8 = require("../../../../../assets/bs-image8.png");
+const BSImage9 = require("../../../../../assets/bs-image9.png");
 
 export default function BrightSmilesProject() {
     return (
       <div className="bright-smiles-container">
         <img src={IntroImg} alt="" />
+        <br/>
+        <br/>
+        <br/>
         <div className="objective">
           <b>Bright Similes Orthodontics is a Bangalore based Dental Clinic.</b>{" "}
           The primary objective is to design a clean and modern website that
@@ -209,6 +217,7 @@ export default function BrightSmilesProject() {
             images were tweaked on Photoshop, using the brush tool, a simple
             pattern was created and the images were placed accordingly.
           </div>
+          <br />
           <div>The following points are the highlights -</div>
           <ul>
             <li>Happy imagery to portray brand - “Bright Smiles”</li>
@@ -218,6 +227,92 @@ export default function BrightSmilesProject() {
             </li>
             <li>Showing social proof of 900+ happy customers</li>
           </ul>
+        </div>
+        <h2>Services section</h2>
+        <br />
+        <img src={BSImage5} alt="" />
+        <br />
+        <br />
+        <br />
+        <div>
+          <div>
+            This would probably be consider one of the most important sections
+            of the website. From the research that was conducted, the users had
+            mentioned about the importance of transparency. This was achieved by
+            showing to the users the services offered along with the average
+            cost of each treatment. Average operation time is also mentioned in
+            order to provide clarity about the amount of time each of the
+            treatment would take.
+          </div>
+          <br />
+          <div>The following are the highlights of this section -</div>
+          <ul>
+            <li>Clear description of each specialty</li>
+            <li>Accurate usage of icons for better understanding</li>
+            <li>Providing transparency with rates and time period</li>
+            <li>Establishing confidence with showing successful operations</li>
+          </ul>
+        </div>
+        <h2>Testimonials</h2>
+        <br />
+        <img src={BSImage6} alt="" />
+        <br />
+        <br />
+        <div>
+          Testimonials are an essential component of any dental clinic website
+          as they provide valuable feedback from patients who have experienced
+          the clinic's services. Positive testimonials from satisfied patients
+          can help build trust and credibility for the clinic, giving potential
+          patients confidence in choosing their services. Additionally,
+          testimonials can offer insights into the patient experience, including
+          the quality of care, the professionalism of the staff, and the overall
+          atmosphere of the clinic. By highlighting positive feedback from past
+          patients, the testimonials section can help attract new patients and
+          establish a positive reputation for the clinic.
+        </div>
+        <br />
+        <br />
+        <h2>Meet the team</h2>
+        <br />
+        <img src={BSImage7} alt="" />
+        <br />
+        <br />
+        <div>
+          This section is crucial to building trust and humanising the practice.
+          It highlights expertise and provides a personalised experience for
+          patients. Patients can get to know the faces behind the practice,
+          creating a sense of familiarity and confidence in their choice of
+          dental provider
+        </div>
+        <br />
+        <br />
+        <h2>Contact us section</h2>
+        <br />
+        <img src={BSImage8} alt="" />
+        <br />
+        <br />
+        <div>
+          The last section of the website deals with the location of the dental
+          clinic. This would open the location to the clinic and the customer
+          can simply find directions to the place. Also, as an additional
+          customer conversion element, we’ve added a button to schedule
+          appointment or simply call them to book an appointment.
+        </div>
+        <br />
+        <br />
+        <h2>Conclusion</h2>
+        <br />
+        <img src={BSImage9} alt="" />
+        <br />
+        <br />
+        <div>
+          Bright Smiles Orthodontics was a fun project to work on. This design
+          of this project was completed within 2 weeks of commencement. This
+          included the user research and interviews as well. The next phase of
+          the project is yet to kick-off. Hoping it would start soon and the
+          updates would be added to this case study.<br/><br/> Reach out to me for any
+          queries regarding this project or have a similar idea to execute.
+          Would love to be a part of something fun :)
         </div>
       </div>
     );

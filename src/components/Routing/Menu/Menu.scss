@@ -25,6 +25,7 @@
       background: none;
       border: none;
       height: 24px;
+      cursor: pointer;
     }
   }
   .menu-list {
@@ -37,11 +38,16 @@
       display: flex;
       gap: 52px;
       margin: unset;
+      padding-left: 70px;
       .nav-link {
         font-weight: 400;
         font-size: 18px;
         list-style: none;
         cursor: pointer;
+        .active {
+          font-weight: 700;
+          text-decoration: underline;
+        }
       }
       .link {
         color: #000000;

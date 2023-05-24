@@ -1,4 +1,16 @@
 .routingContainer {
   margin: unset;
   font-family: "Inter";
+  .scroll-to-top-button {
+    position: fixed;
+    bottom: 116px;
+    right: 30px;
+    background: unset;
+    border: none;
+    cursor: pointer;
+    img {
+      width: 46px;
+      height: auto;
+    }
+  }
 }
