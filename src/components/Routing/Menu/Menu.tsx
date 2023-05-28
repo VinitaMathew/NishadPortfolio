@@ -58,7 +58,6 @@ export default function Menu(props: any) {
             className="menu-button"
             onClick={() => {
               handleMenuIconClick(!isMenuOpen);
-              window.scrollTo(0, 0);
             }}
           >
             <img src={isMenuOpen ? CloseIcon : MenuIcon}></img>
