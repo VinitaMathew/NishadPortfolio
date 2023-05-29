@@ -41,6 +41,7 @@ export default function Menu(props: any) {
       className={isMobile ? "menu-container-mobile" : "menu-container-desktop"}
       style={{ boxShadow: isMenuOpen ? "0 6px 12px rgba(0,0,0,.2)" : "unset" }}
     >
+      <div className="common-container">
       <NavLink
         end
         to="/"
@@ -158,6 +159,7 @@ export default function Menu(props: any) {
           </div>
         </div>
       ) : null}
+      </div>
     </div>
   );
 }

@@ -1,7 +1,5 @@
 .menu-container-desktop,
 .menu-container-mobile {
-  display: flex;
-  max-width: 1260px;
   padding-top: 78px;
   text-align: right;
   z-index: 1000;
@@ -12,9 +10,15 @@
   background: white;
   left: 50%;
   transform: translateX(-50%);
+  .common-container{
+    display: flex;
+    max-width: 1260px;
+    margin: auto;
+  }
   .logo {
     width: 49px;
     height: auto;
+    margin-left: 23px;
   }
   .mobile-wrapper-menu {
     position: fixed;
@@ -41,7 +45,6 @@
       display: flex;
       gap: 52px;
       margin: unset;
-      padding-left: 70px;
       .nav-link {
         font-weight: 400;
         font-size: 18px;
@@ -60,6 +63,7 @@
     .external-links {
       display: flex;
       gap: 30px;
+      margin-right: 23px;
       .link-img {
         height: 24px;
         width: auto;

@@ -1,7 +1,7 @@
 .about-page {
   max-width: 1223px;
   margin: auto;
-  margin-top: 246px;
+  margin-top: 180px;
   margin-bottom: 112px;
   position: relative;
   padding: 0px 23px;
@@ -23,7 +23,6 @@
   .image {
     width: 100%;
     height: auto;
-    min-width: 1223px;
     margin: 32px 0px;
   }
   .accordion {
@@ -126,7 +125,7 @@
   }
 }
 
-@media only screen and (max-width: 1420px) {
+@media only screen and (max-width: 1024px) {
   .about-page {
     margin-top: 96px;
     .heading {
