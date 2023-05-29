@@ -1,6 +1,6 @@
 .contact-container {
   max-width: 1223px;
-  padding: 0px 15px;
+  padding: 0px 23px;
   min-width: 1223px;
   margin: 0px auto 150px;
   padding-top: 116px;
@@ -43,14 +43,20 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1300px) {
   .contact-container {
     min-width: unset;
     margin-bottom: 60px;
+    padding-top: 70px;
+    h2{
+      font-size: 20px;
+      margin-top: unset;
+    }
     .content-wrapper {
       gap: 24px;
       .description {
         max-width: unset;
+        font-size: 16px;
       }
       .info-container {
         width: 100%;

@@ -1,9 +1,10 @@
 .other-projects-container {
   max-width: 1223px;
-  padding: 0px 15px;
+  padding: 0px 23px;
   margin: auto;
   display: flex;
   flex-direction: column;
+  position: relative;
   h2 {
     margin: 164px 0px 100px;
   }
@@ -16,6 +17,8 @@
       width: 100%;
       height: auto;
       margin-bottom: 32px;
+    }
+    .clickable {
       &:hover {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       }
@@ -34,13 +37,39 @@
       cursor: pointer;
     }
   }
+  .background-img {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    left: -45px;
+    top: 231px;
+    z-index: -1;
+  }
 }
 @media only screen and (max-width: 1300px) {
   .other-projects-container {
+    h2 {
+      margin: 60px 0px 42px;
+      font-size: 20px;
+    }
     .projects-wrapper {
       .project {
         max-width: unset;
       }
+    }
+    .about-nav {
+      .about-btn {
+        margin: 24px 0px 40px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1420px) {
+  .other-projects-container {
+    .background-img {
+      display: none;
     }
   }
 }

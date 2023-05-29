@@ -4,7 +4,7 @@
   margin-top: 246px;
   margin-bottom: 112px;
   position: relative;
-  padding: 0px 15px;
+  padding: 0px 23px;
   .heading {
     font-weight: 700;
     font-size: 48px;
@@ -112,7 +112,7 @@
         margin-right: 22px;
         margin-bottom: -5px;
       }
-      a{
+      a {
         text-decoration: underline;
         cursor: pointer;
       }
@@ -128,15 +128,53 @@
 
 @media only screen and (max-width: 1420px) {
   .about-page {
-    margin-top: 152px;
+    margin-top: 96px;
+    .heading {
+      font-size: 24px;
+      &::after {
+        height: 6px;
+        margin-top: 37px;
+        width: 52px;
+      }
+    }
     .image {
       min-width: unset;
     }
-    .accordion{
-      .accordion-panel{
-        .list{
-          .list-item{
+    .accordion {
+      .accordion-button {
+        font-size: 16px;
+        padding-block: 22px;
+        padding-left: 6px;
+        &::after {
+          height: 10px;
+          width: 10px;
+        }
+      }
+      .accordion-panel {
+        font-size: 14px;
+        .panel-image {
+          min-width: unset;
+          min-height: 77px;
+        }
+        .list {
+          .list-item {
             flex-direction: column;
+            .right-section {
+              .title {
+                font-size: 14px;
+                margin-bottom: 16px;
+              }
+              .school {
+                font-size: 14px;
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+        .info-container {
+          span,
+          a {
+            font-size: 14px;
           }
         }
       }

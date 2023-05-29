@@ -5,10 +5,12 @@ import "./ClientProject.scss";
 const ClientProject1 = require("../../../../assets/client-project1.png");
 const ClientProject2 = require("../../../../assets/client-project2.png");
 const ClientProject3 = require("../../../../assets/client-project3.png");
+const BackgroundImg = require("../../../../assets/background-img1.png");
 
 export default function ClientProject() {
   return (
     <div className="client-project-container">
+      <img className="background-img" src={BackgroundImg} alt="" />
       <div className="image-wrapper">
         <NavLink to="/Pranati">
           <img

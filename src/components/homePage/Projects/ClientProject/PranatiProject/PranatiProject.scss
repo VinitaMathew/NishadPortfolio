@@ -3,7 +3,7 @@
   margin: auto;
   margin-top: 175px;
   margin-bottom: 112px;
-  padding: 0px 15px;
+  padding: 0px 23px;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
@@ -202,13 +202,33 @@
 
 @media only screen and (max-width: 1024px) {
   .pranati-container {
+    font-size: 14px;
+    margin-top: 118px;
+    margin-bottom: 70px;
+    h2 {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    ul {
+      li {
+        line-height: 180%;
+      }
+    }
+    .objective {
+      padding: 23px 32px;
+    }
     .analysis-container {
+      gap: 0px;
       .analysis-item {
         width: 100%;
         margin-top: 45px;
+        img {
+          width: 50px;
+          height: 53px;
+        }
       }
       .percent {
-        font-size: 76px;
+        font-size: 75px;
         margin-top: 22px;
       }
     }
@@ -244,18 +264,33 @@
       }
     }
     .analysis-result-container {
+      img {
+        width: 42px;
+        height: 42px;
+        margin-right: 16px;
+      }
       .analysis-result-item {
         width: 100%;
       }
     }
     .challenges {
       flex-direction: column;
+      gap: 0px;
+      margin-bottom: 62px;
     }
     .ui-palette-wrapper {
       flex-direction: column;
+      gap: 12px;
+      .palette {
+        h4 {
+          font-size: 16px;
+        }
+      }
     }
     .homepage {
       flex-direction: column;
+      gap: 18px;
+      margin-bottom: 8px;
       img {
         max-width: unset;
       }

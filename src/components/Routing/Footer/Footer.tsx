@@ -11,7 +11,14 @@ export default function Footer() {
 
   return (
     <div className="footer-container">
-        <img src={Logo} alt="" className="logo" />
+      <img src={Logo} alt="" className="logo" />
+      <div className="details">
+        <div>Website -</div>
+        <div>
+          Designed by <a target="_blank">Nishad</a> | Developed by{" "}
+          <a target="_blank">Vinita</a>
+        </div>
+      </div>
     </div>
   );
 }

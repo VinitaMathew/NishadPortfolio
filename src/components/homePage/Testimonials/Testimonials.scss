@@ -1,6 +1,6 @@
 .testimonials-container {
   max-width: 1223px;
-  padding: 0px 15px;
+  padding: 0px 23px;
   margin: auto;
   min-width: 1223px;
   h2 {
@@ -67,11 +67,39 @@
 @media only screen and (max-width: 1300px) {
   .testimonials-container {
     min-width: unset;
+    h2 {
+      font-size: 20px;
+    }
     .testimonials {
       flex-wrap: wrap;
       .testimonials-list-wrapper {
         .testimonial {
           max-width: unset;
+          .content-wrapper {
+            font-size: 12px;
+            padding-bottom: 14px;
+          }
+          .footer {
+            .footer-profile {
+              .profile-pic {
+                width: 32px;
+                height: auto;
+              }
+              .signature {
+                .name {
+                  font-size: 14px;
+                }
+                .designation {
+                  font-size: 10px;
+                }
+              }
+            }
+            .colon {
+              width: 26px;
+              height: auto;
+              margin-top: 10px;
+            }
+          }
         }
       }
     }

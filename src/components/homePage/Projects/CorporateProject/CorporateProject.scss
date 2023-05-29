@@ -75,9 +75,30 @@
   .corporate-project-container {
     width: unset;
     width: 100%;
+    .disclaimer {
+      font-size: 14px;
+    }
+    .overview-heading {
+      font-size: 20px;
+      padding-top: 10px;
+    }
+    .overview {
+      font-size: 14px;
+      padding-bottom: 20px;
+    }
+    .accordion-button {
+      font-size: 16px;
+      padding-block: 22px;
+      &::after {
+        height: 10px;
+        width: 10px;
+      }
+    }
     .accordion-panel {
+      font-size: 14px;
       .panel-image {
         min-width: unset;
+        min-height: 77px;
       }
     }
   }
