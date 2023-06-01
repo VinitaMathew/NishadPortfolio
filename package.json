@@ -1,4 +1,5 @@
 {
+  "homepage": "http://vinitamathew.github.io/NishadPortfolio",
   "name": "portfolio-nishad",
   "version": "0.1.0",
   "private": true,
@@ -23,10 +24,13 @@
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "@types/react-router-dom": "^5.1.9",
+    "gh-pages": "^5.0.0",
     "node-sass": "^6.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
