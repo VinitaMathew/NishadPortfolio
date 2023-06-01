@@ -1,12 +1,24 @@
 import React from "react";
 import testimonialData from "./TestimonialsData";
 import "./Testimonials.scss";
+import { useInView } from "react-intersection-observer";
 
 const ColonImg = require("../../../assets/colon.png");
 
 export default function Testimonials() {
+  const [ref, inView] = useInView({
+    threshold: 0.01,
+    triggerOnce: true,
+  });
   return (
-    <div className="testimonials-container">
+    <div
+      ref={ref}
+      className={
+        inView
+          ? "slide-up testimonials-container"
+          : "hidden testimonials-container"
+      }
+    >
       <h2>Testimonials</h2>
       <div className="testimonials">
         <div className="testimonials-list-wrapper">

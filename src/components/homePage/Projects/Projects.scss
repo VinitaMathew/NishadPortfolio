@@ -3,6 +3,9 @@
   margin-top: 30px;
   min-width: 1223px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   .projects-heading {
     display: flex;
     list-style: none;
@@ -26,7 +29,7 @@
     }
   }
   .projects-list-wrapper {
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
   }
 }
@@ -34,11 +37,13 @@
 @media only screen and (max-width: 1420px) {
   .projects-container {
     min-width: unset;
-    padding-top: 55px;
+    padding-top: 65px;
+    gap: 0px;
     .projects-heading {
       .tab-item {
         font-size: 16px;
         text-align: center;
+        height: 66px;
       }
     }
     .projects-list-wrapper {

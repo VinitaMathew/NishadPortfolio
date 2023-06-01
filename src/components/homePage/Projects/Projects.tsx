@@ -3,7 +3,7 @@ import ClientProject from "./ClientProject/ClientProject";
 import CorporateProject from "./CorporateProject/CorporateProject";
 import "./Projects.scss";
 
-const Projects=React.forwardRef((props, projectsRef:any) =>  {
+const Projects = React.forwardRef((props, projectsRef: any) => {
   const tabList = ["Featured client projects", "Work at corporates"];
   const [tab, setTab] = useState<String>(tabList[0]);
   const handleTabClick = (tab: String) => {
