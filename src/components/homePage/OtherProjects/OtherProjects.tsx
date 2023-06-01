@@ -33,6 +33,7 @@ export default function OtherProjects() {
           href="/"
           target="_blank"
           ref={project1}
+          rel="noreferrer"
           className={inView1 ? "slide-up" : "hidden"}
         >
           <img
@@ -48,6 +49,7 @@ export default function OtherProjects() {
           href="/"
           target="_blank"
           ref={project2}
+          rel="noreferrer"
           className={inView2 ? "slide-up" : "hidden"}
         >
           <img
@@ -60,6 +62,7 @@ export default function OtherProjects() {
           href="/"
           target="_blank"
           ref={project2}
+          rel="noreferrer"
           className={inView2 ? "slide-up" : "hidden"}
         >
           <img

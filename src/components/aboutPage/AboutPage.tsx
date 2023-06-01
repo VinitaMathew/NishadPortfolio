@@ -190,13 +190,17 @@ export default function AboutPage() {
               </div>
               <div className="behance">
                 <img src={BehanceIcon} alt="" />
-                <a href="https://www.behance.net/nishads3" target="_blank">
+                <a
+                  href="https://www.behance.net/nishads3"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   nishads3
                 </a>
               </div>
               <div className="linkedin">
                 <img src={LinkedinIcon} alt="" />
-                <a href="/" target="_blank">
+                <a href="/" target="_blank" rel="noreferrer">
                   Nishad S
                 </a>
               </div>

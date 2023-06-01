@@ -22,9 +22,9 @@ export default function Testimonials() {
       <h2>Testimonials</h2>
       <div className="testimonials">
         <div className="testimonials-list-wrapper">
-          {testimonialData[0].map((item) => {
+          {testimonialData[0].map((item,index) => {
             return (
-              <div className="testimonial">
+              <div className="testimonial" key={index}>
                 <div className="content-wrapper">{item.comment}</div>
                 <div className="footer">
                   <div className="footer-profile">
@@ -41,9 +41,9 @@ export default function Testimonials() {
           })}
         </div>
         <div className="testimonials-list-wrapper">
-          {testimonialData[1].map((item) => {
+          {testimonialData[1].map((item,index) => {
             return (
-              <div className="testimonial">
+              <div className="testimonial" key={index}>
                 <div className="content-wrapper">{item.comment}</div>
                 <div className="footer">
                   <div className="footer-profile">

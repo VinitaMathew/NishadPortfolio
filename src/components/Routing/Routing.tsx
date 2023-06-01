@@ -31,7 +31,7 @@ export default function Routing() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isMobile]);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });

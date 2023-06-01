@@ -1,11 +1,7 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React from "react";
 import "./Footer.scss";
 
 const Logo = require("../../../assets/logo.png");
-const BehanceLogo = require("../../../assets/behance-logo.png");
-const LinkedInLogo = require("../../../assets/linkedin-logo.png");
-const GmailLogo = require("../../../assets/gmail-logo.png");
 
 export default function Footer() {
 
@@ -15,8 +11,14 @@ export default function Footer() {
       <div className="details">
         <div>Website -</div>
         <div>
-          Designed by <a target="_blank">Nishad</a> | Developed by{" "}
-          <a target="_blank">Vinita</a>
+          Designed by{" "}
+          <a target="_blank" rel="noreferrer" href="/">
+            Nishad
+          </a>{" "}
+          | Developed by{" "}
+          <a target="_blank" rel="noreferrer" href="/">
+            Vinita
+          </a>
         </div>
       </div>
     </div>

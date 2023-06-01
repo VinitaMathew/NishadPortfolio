@@ -42,123 +42,134 @@ export default function Menu(props: any) {
       style={{ boxShadow: isMenuOpen ? "0 6px 12px rgba(0,0,0,.2)" : "unset" }}
     >
       <div className="common-container">
-      <NavLink
-        end
-        to="/"
-        className="link"
-        onClick={() => {
-          handleMenuClick();
-          window.scrollTo(0, 0);
-        }}
-      >
-        <img src={Logo} alt="" className="logo" />
-      </NavLink>
-      {isMobile ? (
-        <div className="mobile-wrapper-menu">
-          <button
-            className="menu-button"
-            onClick={() => {
-              handleMenuIconClick(!isMenuOpen);
-            }}
-          >
-            <img src={isMenuOpen ? CloseIcon : MenuIcon}></img>
-          </button>
-        </div>
-      ) : null}
-      {(isMobile && isMenuOpen) || !isMobile ? (
-        <div className="menu-list">
-          <ul className="nav-links">
-            <li
-              className="nav-link"
+        <NavLink
+          end
+          to="/"
+          className="link"
+          onClick={() => {
+            handleMenuClick();
+            window.scrollTo(0, 0);
+          }}
+        >
+          <img src={Logo} alt="" className="logo" />
+        </NavLink>
+        {isMobile ? (
+          <div className="mobile-wrapper-menu">
+            <button
+              className="menu-button"
               onClick={() => {
-                handleMenuClick();
-                window.scrollTo(0, 0);
+                handleMenuIconClick(!isMenuOpen);
               }}
             >
-              <NavLink end to="/" className="link">
-                Home
-              </NavLink>
-            </li>
-            {currentPath !== "" ? (
-              <li
-                className="nav-link"
-                onClick={() => {
-                  props.scrollToProjects();
-                  handleMenuClick();
-                }}
-              >
-                <NavLink end to="/" className="link">
-                  Work
-                </NavLink>
-              </li>
-            ) : (
-              <li
-                className="nav-link"
-                onClick={() => {
-                  props.scrollToProjects();
-                  handleMenuClick();
-                }}
-              >
-                Work
-              </li>
-            )}
-            <li
-              className="nav-link"
-              onClick={() => {
-                handleMenuClick();
-                window.scrollTo(0, 0);
-              }}
-            >
-              <NavLink to="/about" className="link">
-                About
-              </NavLink>
-            </li>
-            {currentPath !== "" ? (
-              <li
-                className="nav-link"
-                onClick={() => {
-                  props.scrollToContact();
-                  handleMenuClick();
-                }}
-              >
-                <NavLink end to="/" className="link">
-                  Contact
-                </NavLink>
-              </li>
-            ) : (
-              <li
-                className="nav-link"
-                onClick={() => {
-                  props.scrollToContact();
-                  handleMenuClick();
-                }}
-              >
-                Contact
-              </li>
-            )}
-            <li
-              className="nav-link"
-              onClick={() => {
-                handleResumeClick();
-                handleMenuClick();
-              }}
-            >
-              Resume
-            </li>
-          </ul>
-          <div className="external-links">
-            <a href="https://www.behance.net/nishads3" target="_blank">
-              <img className="link-img" src={BehanceLogo} alt="" />
-            </a>
-            <a href="/" target="_blank">
-              <img className="link-img" src={LinkedInLogo} alt="" />
-            </a>
-            <a href="mailto:nishadskumar03@gmail.com" target="_blank">
-              <img className="link-img" src={GmailLogo} alt="" />
-            </a>
+              <img
+                src={isMenuOpen ? CloseIcon : MenuIcon}
+                alt="toggle menu"
+              ></img>
+            </button>
           </div>
-        </div>
-      ) : null}
+        ) : null}
+        {(isMobile && isMenuOpen) || !isMobile ? (
+          <div className="menu-list">
+            <ul className="nav-links">
+              <li
+                className="nav-link"
+                onClick={() => {
+                  handleMenuClick();
+                  window.scrollTo(0, 0);
+                }}
+              >
+                <NavLink end to="/" className="link">
+                  Home
+                </NavLink>
+              </li>
+              {currentPath !== "" ? (
+                <li
+                  className="nav-link"
+                  onClick={() => {
+                    props.scrollToProjects();
+                    handleMenuClick();
+                  }}
+                >
+                  <NavLink end to="/" className="link">
+                    Work
+                  </NavLink>
+                </li>
+              ) : (
+                <li
+                  className="nav-link"
+                  onClick={() => {
+                    props.scrollToProjects();
+                    handleMenuClick();
+                  }}
+                >
+                  Work
+                </li>
+              )}
+              <li
+                className="nav-link"
+                onClick={() => {
+                  handleMenuClick();
+                  window.scrollTo(0, 0);
+                }}
+              >
+                <NavLink to="/about" className="link">
+                  About
+                </NavLink>
+              </li>
+              {currentPath !== "" ? (
+                <li
+                  className="nav-link"
+                  onClick={() => {
+                    props.scrollToContact();
+                    handleMenuClick();
+                  }}
+                >
+                  <NavLink end to="/" className="link">
+                    Contact
+                  </NavLink>
+                </li>
+              ) : (
+                <li
+                  className="nav-link"
+                  onClick={() => {
+                    props.scrollToContact();
+                    handleMenuClick();
+                  }}
+                >
+                  Contact
+                </li>
+              )}
+              <li
+                className="nav-link"
+                onClick={() => {
+                  handleResumeClick();
+                  handleMenuClick();
+                }}
+              >
+                Resume
+              </li>
+            </ul>
+            <div className="external-links">
+              <a
+                href="https://www.behance.net/nishads3"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img className="link-img" src={BehanceLogo} alt="" />
+              </a>
+              <a href="/" target="_blank" rel="noreferrer">
+                <img className="link-img" src={LinkedInLogo} alt="" />
+              </a>
+              <a
+                href="mailto:nishadskumar03@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img className="link-img" src={GmailLogo} alt="" />
+              </a>
+            </div>
+          </div>
+        ) : null}
       </div>
     </div>
   );

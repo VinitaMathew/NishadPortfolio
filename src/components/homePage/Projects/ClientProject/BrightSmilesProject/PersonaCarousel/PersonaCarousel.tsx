@@ -31,7 +31,7 @@ const PersonaCarousel = () => {
     <Carousel responsive={responsive} containerClass="carousel-container">
       {images.map((image, index) => (
         <div key={index} className="slide-item">
-          <img src={image} alt={`Image ${index + 1}`} />
+          <img src={image} alt={`Carousel ${index + 1}`} />
         </div>
       ))}
     </Carousel>
