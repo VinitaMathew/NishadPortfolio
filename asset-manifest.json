@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/NishadPortfolio/static/css/main.b73378b3.css",
-    "main.js": "/NishadPortfolio/static/js/main.62ad7d8e.js",
+    "main.css": "/NishadPortfolio/static/css/main.64fe6ef8.css",
+    "main.js": "/NishadPortfolio/static/js/main.f93bc8d0.js",
     "static/media/pranati-image8.png": "/NishadPortfolio/static/media/pranati-image8.d97f3dcd4d5bfbc0ebe1.png",
     "static/media/tag-image5.png": "/NishadPortfolio/static/media/tag-image5.15e28ff8d7a24b298760.png",
     "static/media/tag-image4.png": "/NishadPortfolio/static/media/tag-image4.7b9ee91aee45cc47caae.png",
@@ -64,11 +64,11 @@
     "static/media/pranati-image6.png": "/NishadPortfolio/static/media/pranati-image6.20ae7a6db01ae770a5d5.png",
     "static/media/revicons.woff": "/NishadPortfolio/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/NishadPortfolio/index.html",
-    "main.b73378b3.css.map": "/NishadPortfolio/static/css/main.b73378b3.css.map",
-    "main.62ad7d8e.js.map": "/NishadPortfolio/static/js/main.62ad7d8e.js.map"
+    "main.64fe6ef8.css.map": "/NishadPortfolio/static/css/main.64fe6ef8.css.map",
+    "main.f93bc8d0.js.map": "/NishadPortfolio/static/js/main.f93bc8d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.b73378b3.css",
-    "static/js/main.62ad7d8e.js"
+    "static/css/main.64fe6ef8.css",
+    "static/js/main.f93bc8d0.js"
   ]
 }
