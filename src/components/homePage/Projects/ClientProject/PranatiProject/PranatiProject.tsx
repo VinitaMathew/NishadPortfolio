@@ -1,6 +1,7 @@
 import React from "react";
 import pranatiPagesData from "./PranatiPagesData";
 import "./PranatiProject.scss";
+import { NavLink } from "react-router-dom";
 
 const IntroImg = require("../../../../../assets/client-project1.png");
 const PTImage1 = require("../../../../../assets/pranati-image1.png");
@@ -22,6 +23,7 @@ const PTImage11 = require("../../../../../assets/pranati-image11.png");
 const PTImage12 = require("../../../../../assets/pranati-image12.png");
 const PTImage13 = require("../../../../../assets/pranati-image13.png");
 const PTImage14 = require("../../../../../assets/pranati-image14.png");
+const NavIcon = require("../../../../../assets/nav-icon.png");
 
 export default function PranatiProject() {
   return (
@@ -161,7 +163,7 @@ export default function PranatiProject() {
       <br />
       <div className="analysis-table">
         <div>
-          <img src={PTImage5} alt="" />
+          <img className="amaha-img" src={PTImage5} alt="" />
           <span>Amaha - Your mental health partner</span>
         </div>
         <br />
@@ -244,7 +246,7 @@ export default function PranatiProject() {
       <br />
       <div className="analysis-table">
         <div>
-          <img src={PTImage6} alt="" />
+          <img className="docvita-img" src={PTImage6} alt="" />
           <span>Docvita</span>
         </div>
         <br />
@@ -506,6 +508,23 @@ export default function PranatiProject() {
         The booking flow is taken care by a third party appointment booking API
         called SetMore. Thus not much of a design change can be incorporated
         into that plugin, hence not added into this case study.
+      </div>
+      <br />
+      <br />
+      <div className="nav-buttons">
+        <div>
+          <div>Read the next case study</div>
+          <NavLink
+            to="/Tag"
+            onClick={() =>
+              window.scrollTo({
+                top: 0,
+              })
+            }
+          >
+            TAG <img src={NavIcon} alt="next project"></img>
+          </NavLink>
+        </div>
       </div>
     </div>
   );

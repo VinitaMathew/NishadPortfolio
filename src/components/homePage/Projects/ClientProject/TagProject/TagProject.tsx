@@ -1,6 +1,7 @@
 import React from "react";
 import tagScreenData from "./TagScreensData";
 import "./TagProject.scss";
+import { NavLink } from "react-router-dom";
 
 const IntroImg = require("../../../../../assets/client-project2.png");
 const TagImage1 = require("../../../../../assets/tag-image1.png");
@@ -8,6 +9,7 @@ const TagImage2 = require("../../../../../assets/tag-image2.png");
 const TagImage3 = require("../../../../../assets/tag-image3.png");
 const TagImage4 = require("../../../../../assets/tag-image4.png");
 const TagImage5 = require("../../../../../assets/tag-image5.png");
+const NavIcon = require("../../../../../assets/nav-icon.png");
 
 export default function TagProject() {
   return (
@@ -161,6 +163,36 @@ export default function TagProject() {
         micro interactions would be added. The next phase would be spread across
         a longer timeline hence enabling the design and development teams more
         time to work and produce efficient products.
+      </div>
+      <br/><br/>
+      <div className="nav-buttons">
+        <div className="prev-nav">
+          <div>Previous case study</div>
+          <NavLink
+            to="/Pranati"
+            onClick={() =>
+              window.scrollTo({
+                top: 0,
+              })
+            }
+          >
+            Pranati - Wellness <img src={NavIcon} alt="previous project"></img>
+          </NavLink>
+        </div>
+        <div className="prev-nav">
+          <div>Read the next case study</div>
+          <NavLink
+            to="/BrightSmiles"
+            className="right-nav"
+            onClick={() =>
+              window.scrollTo({
+                top: 0,
+              })
+            }
+          >
+            Bright Smiles <img src={NavIcon} alt="next project"></img>
+          </NavLink>
+        </div>
       </div>
     </div>
   );

@@ -14,11 +14,23 @@ export default function Menu(props: any) {
     window.matchMedia("only screen and (max-width:1024px)").matches
   );
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-
   const location = useLocation();
   const [currentPath, setCurrentPath] = useState<any>(
     window.location.href.split("/").pop()
   );
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.pageYOffset);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleMenuIconClick = (isOpen: boolean) => {
     setIsMenuOpen(isOpen);
@@ -38,8 +50,14 @@ export default function Menu(props: any) {
 
   return (
     <div
-      className={isMobile ? "menu-container-mobile" : "menu-container-desktop"}
-      style={{ boxShadow: isMenuOpen ? "0 6px 12px rgba(0,0,0,.2)" : "unset" }}
+      className={
+        isMobile
+          ? "menu-container-mobile"
+          : scrollY > 0
+          ? "menu-container-desktop scrolled"
+          : "menu-container-desktop"
+      }
+      style={{ boxShadow: isMenuOpen ? "0 6px 12px rgba(0,0,0,.1)" : "unset" }}
     >
       <div className="common-container">
         <NavLink
@@ -157,7 +175,11 @@ export default function Menu(props: any) {
               >
                 <img className="link-img" src={BehanceLogo} alt="" />
               </a>
-              <a href="/" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.linkedin.com/in/nishad-s-1384b5189/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img className="link-img" src={LinkedInLogo} alt="" />
               </a>
               <a

@@ -30,7 +30,7 @@ export default function OtherProjects() {
       <img className="background-img" src={BackgroundImg} alt="" />
       <div className="projects-wrapper">
         <a
-          href="/"
+          href="https://www.behance.net/gallery/105231495/Website-Redesign-Case-Study"
           target="_blank"
           ref={project1}
           rel="noreferrer"
@@ -46,7 +46,7 @@ export default function OtherProjects() {
           <img className="project" src={Project2} alt="The Road Project" />
         </span>
         <a
-          href="/"
+          href="https://www.behance.net/gallery/109219927/Trading-Website-Design"
           target="_blank"
           ref={project2}
           rel="noreferrer"
@@ -59,7 +59,7 @@ export default function OtherProjects() {
           />
         </a>
         <a
-          href="/"
+          href="https://www.behance.net/gallery/106497813/Earthen-Exotics-Art-website"
           target="_blank"
           ref={project2}
           rel="noreferrer"

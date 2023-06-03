@@ -45,6 +45,7 @@
     .percent {
       font-weight: 700;
       font-size: 124px;
+      font-family: "Poppins";
       margin-top: 40px;
       margin-right: 24px;
     }
@@ -76,10 +77,16 @@
   }
   .analysis-table {
     img {
-      width: 86px;
-      height: 29px;
       margin-right: 39px;
       margin-bottom: -6.5px;
+    }
+    .amaha-img {
+      width: 81px;
+      height: 29px;
+    }
+    .docvita-img {
+      width: 125px;
+      height: 29px;
     }
     span {
       font-weight: 700;
@@ -198,6 +205,22 @@
       gap: 24px;
     }
   }
+  .nav-buttons {
+    display: flex;
+    justify-content: end;
+    img {
+      width: 24px;
+      height: 24px;
+      margin-bottom: -4px;
+      padding-top: 8px;
+    }
+    a {
+      color: #1175b5;
+      font-weight: 700;
+      text-decoration: none;
+      float: right;
+    }
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -297,6 +320,12 @@
     }
     .other-pages {
       flex-direction: column;
+    }
+    .nav-buttons {
+      img {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }

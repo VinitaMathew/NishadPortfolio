@@ -98,8 +98,7 @@
     .accordion-panel {
       font-size: 14px;
       .panel-image {
-        min-width: unset;
-        min-height: 77px;
+        display: none;
       }
     }
   }

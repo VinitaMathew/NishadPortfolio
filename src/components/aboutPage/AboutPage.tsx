@@ -13,7 +13,6 @@ const GmailIcon = require("../../assets/gmail-blue-logo.png");
 const BehanceIcon = require("../../assets/behance-blue-icon.png");
 const LinkedinIcon = require("../../assets/linkedin-blue-icon.png");
 
-
 export default function AboutPage() {
   return (
     <div className="about-page">
@@ -186,7 +185,13 @@ export default function AboutPage() {
             <div className="info-container">
               <div className="email">
                 <img src={GmailIcon} alt="" />
-                <span>nishadskumar03@gmail.com</span>
+                <a
+                  href="mailto:nishadskumar03@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  nishadskumar03@gmail.com
+                </a>
               </div>
               <div className="behance">
                 <img src={BehanceIcon} alt="" />
@@ -200,7 +205,11 @@ export default function AboutPage() {
               </div>
               <div className="linkedin">
                 <img src={LinkedinIcon} alt="" />
-                <a href="/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/nishad-s-1384b5189/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Nishad S
                 </a>
               </div>

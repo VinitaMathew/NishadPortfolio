@@ -7,10 +7,10 @@ const BehanceIcon = require("../../../assets/behance-blue-icon.png");
 const LinkedinIcon = require("../../../assets/linkedin-blue-icon.png");
 
 const Contact = React.forwardRef((props, contactRef: any) => {
-const [ref, inView] = useInView({
-  threshold: 0.01,
-  triggerOnce: true,
-});
+  const [ref, inView] = useInView({
+    threshold: 0.01,
+    triggerOnce: true,
+  });
   return (
     <div className="contact-container" ref={contactRef}>
       <h2
@@ -38,7 +38,13 @@ const [ref, inView] = useInView({
         <div className="info-container">
           <div className="email">
             <img src={GmailIcon} alt="" />
-            <span>nishadskumar03@gmail.com</span>
+            <a
+              href="mailto:nishadskumar03@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              nishadskumar03@gmail.com
+            </a>
           </div>
           <div className="behance">
             <img src={BehanceIcon} alt="" />
@@ -52,7 +58,11 @@ const [ref, inView] = useInView({
           </div>
           <div className="linkedin">
             <img src={LinkedinIcon} alt="" />
-            <a href="/" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/in/nishad-s-1384b5189/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Nishad S
             </a>
           </div>
