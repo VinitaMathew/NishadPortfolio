@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/NishadPortfolio/static/css/main.91fec101.css",
-    "main.js": "/NishadPortfolio/static/js/main.f93bc8d0.js",
+    "main.css": "/NishadPortfolio/static/css/main.6b7a6b61.css",
+    "main.js": "/NishadPortfolio/static/js/main.bde4fce9.js",
     "static/media/pranati-image8.png": "/NishadPortfolio/static/media/pranati-image8.d97f3dcd4d5bfbc0ebe1.png",
     "static/media/tag-image5.png": "/NishadPortfolio/static/media/tag-image5.15e28ff8d7a24b298760.png",
     "static/media/tag-image4.png": "/NishadPortfolio/static/media/tag-image4.7b9ee91aee45cc47caae.png",
@@ -23,7 +23,6 @@
     "static/media/client-project1.png": "/NishadPortfolio/static/media/client-project1.16d5c865f0a3674d5234.png",
     "static/media/bs-image6.png": "/NishadPortfolio/static/media/bs-image6.157627b94035fd98a465.png",
     "static/media/pranati-image11.png": "/NishadPortfolio/static/media/pranati-image11.681994ea03ec8918a033.png",
-    "static/media/other-project4.png": "/NishadPortfolio/static/media/other-project4.829310cc885cc49b7d2b.png",
     "static/media/pranati-image13.png": "/NishadPortfolio/static/media/pranati-image13.15d8d65e63f0422b3226.png",
     "static/media/tag-screen8.png": "/NishadPortfolio/static/media/tag-screen8.9636415cc595601ead15.png",
     "static/media/other-project2.png": "/NishadPortfolio/static/media/other-project2.0d9dd0605a6db85f4ab2.png",
@@ -32,6 +31,7 @@
     "static/media/tag-screen1.png": "/NishadPortfolio/static/media/tag-screen1.6ad79a84d0e9213a82d4.png",
     "static/media/pranati-image9.png": "/NishadPortfolio/static/media/pranati-image9.8497a78437157d38d2f0.png",
     "static/media/tag-screen7.png": "/NishadPortfolio/static/media/tag-screen7.ed50d21baf8b9cb35483.png",
+    "static/media/other-project4.png": "/NishadPortfolio/static/media/other-project4.cebcfd2cf09430c8580d.png",
     "static/media/bs-image2.png": "/NishadPortfolio/static/media/bs-image2.eaef51871c3f6e3ed6f6.png",
     "static/media/other-project3.png": "/NishadPortfolio/static/media/other-project3.c541496151f6961dd3d0.png",
     "static/media/bs-image5.png": "/NishadPortfolio/static/media/bs-image5.979d173e95bf103e6365.png",
@@ -51,24 +51,27 @@
     "static/media/corporate-project3.png": "/NishadPortfolio/static/media/corporate-project3.b3efdef2848e041a740c.png",
     "static/media/corporate-project7.png": "/NishadPortfolio/static/media/corporate-project7.dcf8d6de7bcdb352af2c.png",
     "static/media/corporate-project4.png": "/NishadPortfolio/static/media/corporate-project4.18dabeb3365bee4f7a7a.png",
+    "static/media/profile-pic4.png": "/NishadPortfolio/static/media/profile-pic4.61a982056839ce3e1c2b.png",
+    "static/media/profile-pic2.png": "/NishadPortfolio/static/media/profile-pic2.9346035026818ebb5b07.png",
     "static/media/corporate-project6.png": "/NishadPortfolio/static/media/corporate-project6.0714804eccd41b10a2e6.png",
     "static/media/corporate-project1.png": "/NishadPortfolio/static/media/corporate-project1.fd26660a9c3644fd570f.png",
     "static/media/background-img1.png": "/NishadPortfolio/static/media/background-img1.c582341dec73178b2375.png",
     "static/media/corporate-project2.png": "/NishadPortfolio/static/media/corporate-project2.f0cabf234ea777ca7e5b.png",
+    "static/media/profile-pic3.png": "/NishadPortfolio/static/media/profile-pic3.831e080677093dcd4664.png",
     "static/media/corporate-project5.png": "/NishadPortfolio/static/media/corporate-project5.4a899590bba342131f20.png",
-    "static/media/profile-pic1.png": "/NishadPortfolio/static/media/profile-pic1.81023e786cd47528c7b5.png",
     "static/media/background-img2.png": "/NishadPortfolio/static/media/background-img2.fc5b08e546746239b13b.png",
     "static/media/tag-image3.png": "/NishadPortfolio/static/media/tag-image3.cb004089731e8272d02f.png",
     "static/media/revicons.eot": "/NishadPortfolio/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/NishadPortfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/profile-pic1.png": "/NishadPortfolio/static/media/profile-pic1.12546526b83e510694c4.png",
     "static/media/pranati-image6.png": "/NishadPortfolio/static/media/pranati-image6.20ae7a6db01ae770a5d5.png",
     "static/media/revicons.woff": "/NishadPortfolio/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/NishadPortfolio/index.html",
-    "main.91fec101.css.map": "/NishadPortfolio/static/css/main.91fec101.css.map",
-    "main.f93bc8d0.js.map": "/NishadPortfolio/static/js/main.f93bc8d0.js.map"
+    "main.6b7a6b61.css.map": "/NishadPortfolio/static/css/main.6b7a6b61.css.map",
+    "main.bde4fce9.js.map": "/NishadPortfolio/static/js/main.bde4fce9.js.map"
   },
   "entrypoints": [
-    "static/css/main.91fec101.css",
-    "static/js/main.f93bc8d0.js"
+    "static/css/main.6b7a6b61.css",
+    "static/js/main.bde4fce9.js"
   ]
 }
