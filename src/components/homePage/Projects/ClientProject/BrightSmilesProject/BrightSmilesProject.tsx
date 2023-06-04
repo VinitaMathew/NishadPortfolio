@@ -315,7 +315,7 @@ export default function BrightSmilesProject() {
       <br />
       <div className="nav-buttons">
         <div>
-          <div>Read the next case study</div>
+          <div>Previous case study</div>
           <NavLink
             to="/Pranati"
             onClick={() =>

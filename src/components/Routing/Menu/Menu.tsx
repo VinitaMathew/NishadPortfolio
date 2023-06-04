@@ -36,7 +36,7 @@ export default function Menu(props: any) {
     setIsMenuOpen(isOpen);
   };
   const handleResumeClick = () => {
-    window.open("/NishadPortfolio/Nishad_Resume.pdf", "_blank");
+    window.open("/Nishad_Resume.pdf", "_blank");
   };
 
   const handleMenuClick = () => {
