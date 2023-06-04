@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.78600cf4.css",
+    "main.css": "/static/css/main.81e9366d.css",
     "main.js": "/static/js/main.248f2e68.js",
     "static/media/pranati-image8.png": "/static/media/pranati-image8.d97f3dcd4d5bfbc0ebe1.png",
     "static/media/tag-image5.png": "/static/media/tag-image5.15e28ff8d7a24b298760.png",
@@ -67,11 +67,11 @@
     "static/media/pranati-image6.png": "/static/media/pranati-image6.20ae7a6db01ae770a5d5.png",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.78600cf4.css.map": "/static/css/main.78600cf4.css.map",
+    "main.81e9366d.css.map": "/static/css/main.81e9366d.css.map",
     "main.248f2e68.js.map": "/static/js/main.248f2e68.js.map"
   },
   "entrypoints": [
-    "static/css/main.78600cf4.css",
+    "static/css/main.81e9366d.css",
     "static/js/main.248f2e68.js"
   ]
 }
