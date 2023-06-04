@@ -47,7 +47,7 @@
       margin: unset;
       .nav-link {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
         list-style: none;
         cursor: pointer;
         .active {
@@ -75,8 +75,10 @@
 }
 
 .menu-container-desktop.scrolled {
-  padding-top: 40px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1) !important;
+  padding-top: 24px;
+  .menu-list{
+    padding-bottom: 14px;
+  }
 }
 
 .menu-container-mobile {
