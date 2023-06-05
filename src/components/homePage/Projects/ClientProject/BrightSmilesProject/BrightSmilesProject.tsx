@@ -317,14 +317,14 @@ export default function BrightSmilesProject() {
         <div>
           <div>Previous case study</div>
           <NavLink
-            to="/Pranati"
+            to="/Tag"
             onClick={() =>
               window.scrollTo({
                 top: 0,
               })
             }
           >
-            Pranati - Wellness <img src={NavIcon} alt="previous project"></img>
+            TAG <img src={NavIcon} alt="previous project"></img>
           </NavLink>
         </div>
       </div>

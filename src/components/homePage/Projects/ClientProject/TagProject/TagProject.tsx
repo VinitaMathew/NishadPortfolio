@@ -74,7 +74,7 @@ export default function TagProject() {
         <div className="desc">
           <img src={TagImage3} alt="" />
           <div>
-            As mentioned earlier, this project was a very fast paced. I was
+            As mentioned earlier, this project was very fast paced. I was
             given only a few hours to come up with the wireframe. The clients
             just wanted to see how the website structure would look like. They
             didn’t want anything picture perfect in the first phase of the

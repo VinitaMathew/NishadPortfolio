@@ -23,7 +23,7 @@ const testimonialData = [
   [
     {
       comment:
-        "Worked with Nishad for about 4 projects so far and I can confidently say that he is a talented and skilled designer with a bright future. HIs proficient with Figma is impressive and the designs created were both visually stunning and scalable. I appreciate his positive attitude and knack for balancing creativity with practicality. Best of luck with your future endeavours!",
+        "Worked with Nishad for about 4 projects so far and I can confidently say that he is a talented and skilled designer with a bright future. His proficient with Figma is impressive and the designs created were both visually stunning and scalable. I appreciate his positive attitude and knack for balancing creativity with practicality. Best of luck with your future endeavours!",
       profilePic: ProfilePic3,
       name: "Sangeeth K V",
       designation: "Design Consultant, TCS",
