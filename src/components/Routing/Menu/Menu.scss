@@ -50,10 +50,6 @@
         font-size: 16px;
         list-style: none;
         cursor: pointer;
-        .active {
-          font-weight: 700;
-          text-decoration: underline;
-        }
       }
       .link {
         color: #000000;
@@ -76,8 +72,28 @@
 
 .menu-container-desktop.scrolled {
   padding-top: 24px;
-  .menu-list{
-    padding-bottom: 14px;
+  .menu-list {
+    padding-bottom: 30px;
+  }
+}
+.menu-container-desktop {
+  .menu-list {
+    .nav-links {
+      .nav-link {
+        .active {
+          position: relative;
+          &::after {
+            background: #f6dcbc;
+            content: "";
+            height: 5px;
+            left: -8px;
+            margin-top: 30px;
+            position: absolute;
+            width: 63px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -102,6 +118,9 @@
         width: 100%;
         display: flex;
         padding: 24px 0px;
+        .active {
+          font-weight: 700;
+        }
       }
     }
   }
