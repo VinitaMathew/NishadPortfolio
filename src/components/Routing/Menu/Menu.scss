@@ -73,7 +73,7 @@
 .menu-container-desktop.scrolled {
   padding-top: 24px;
   .menu-list {
-    padding-bottom: 30px;
+    padding-bottom: 22px;
   }
 }
 .menu-container-desktop {
@@ -82,6 +82,7 @@
       .nav-link {
         .active {
           position: relative;
+          font-weight: 700;
           &::after {
             background: #f6dcbc;
             content: "";
